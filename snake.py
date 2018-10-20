@@ -14,7 +14,7 @@ class Game(object):
 		self.FPS = 60
 		self.BLOCK_SIZE = 10
 		self.SPEED = self.BLOCK_SIZE
-		self.MAX_LEN_INCREASE = 5
+		self.MAX_LEN_INCREASE = 2
 
 
 		self.set_up()
@@ -39,7 +39,7 @@ class Game(object):
 		self.apple = self.get_first_apple()
 
 		self.acceleration = {'x': 0, 'y': 0}
-		self.max_len = 20
+		self.max_len = 10
 
 		while not self.game_exit and not self.game_over:
 			self.event_control()
